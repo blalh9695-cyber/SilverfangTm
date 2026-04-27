@@ -23,4 +23,107 @@
         <p>&copy; 2026 Silver Fang Manga</p>
     </footer>
 </body>
-</html>
+</html><!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silver Fang - موقع المانجا</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">🐺 Silver Fang</h1>
+            <nav class="navbar">
+                <button id="homeBtn" class="nav-btn active">الرئيسية</button>
+                <button id="browseBtn" class="nav-btn">تصفح</button>
+                <button id="addMangaBtn" class="nav-btn admin-btn">+ إضافة مانجا</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="homePage" class="page active">
+            <div class="hero">
+                <h2>أحدث المانجا</h2>
+            </div>
+            <div class="container">
+                <div id="mangaGrid" class="manga-grid"></div>
+            </div>
+        </section>
+
+        <section id="browsePage" class="page">
+            <div class="container">
+                <h2>تصفح المانجا</h2>
+                <div class="filters">
+                    <input type="text" id="searchInput" placeholder="ابحث عن مانجا...">
+                    <select id="genreFilter">
+                        <option value="">جميع الأنواع</option>
+                        <option value="أكشن">أكشن</option>
+                        <option value="دراما">دراما</option>
+                        <option value="رومانسي">رومانسي</option>
+                        <option value="خيال">خيال</option>
+                    </select>
+                </div>
+                <div id="browseMangaGrid" class="manga-grid"></div>
+            </div>
+        </section>
+
+        <section id="addMangaPage" class="page">
+            <div class="container">
+                <h2>إضافة مانجا جديدة</h2>
+                <form id="addMangaForm" class="manga-form">
+                    <div class="form-group">
+                        <label for="mangaTitle">العنوان:</label>
+                        <input type="text" id="mangaTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mangaAuthor">المؤلف:</label>
+                        <input type="text" id="mangaAuthor" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mangaGenre">النوع:</label>
+                        <select id="mangaGenre" required>
+                            <option value="">اختر نوع</option>
+                            <option value="أكشن">أكشن</option>
+                            <option value="دراما">دراما</option>
+                            <option value="رومانسي">رومانسي</option>
+                            <option value="خيال">خيال</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mangaDescription">الوصف:</label>
+                        <textarea id="mangaDescription" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="mangaCover">رابط الصورة:</label>
+                        <input type="url" id="mangaCover" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mangaStatus">الحالة:</label>
+                        <select id="mangaStatus" required>
+                            <option value="مستمرة">مستمرة</option>
+                            <option value="مكتملة">مكتملة</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-submit">إضافة المانجا</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="detailsPage" class="page">
+            <div class="container">
+                <button id="backBtn" class="btn-back">← العودة</button>
+                <div id="mangaDetails" class="manga-details"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Silver Fang - فريق محب لترجمة المانجا 🐺</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+                            </html>
